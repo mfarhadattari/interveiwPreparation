@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html data-theme="night" lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -10,6 +10,11 @@
     <!-- offline tailwind CSS connection with daisyUI -->
     <link rel="stylesheet" href="daisyUI/daisyUI.css">
     <script src="./daisyUI/tailwindCSS.js"></script>
+    <script src="./fontAwsome/fontAwesome.js"></script>
+
+
+    <!-- font awesome -->
+    <!-- <script src="https://kit.fontawesome.com/2505059374.js" crossorigin="anonymous"></script> -->
 
     <!-- tailwind CSS connection with daisyUI -->
     <!-- <link href="https://cdn.jsdelivr.net/npm/daisyui@2.51.1/dist/full.css" rel="stylesheet" type="text/css" />
@@ -20,8 +25,36 @@
     <!-- header Section -->
     <header>
         <!-- navigation section -->
-        <nav>
-
+        <nav class="container mx-auto">
+            <div class="navbar p-5">
+                <div class="flex-1">
+                  <a class="text-4xl flex gap-5 text-white items-center">
+                    <i class="fa-solid fa-laptop-code"></i>
+                    <span>M Farhad</span></a>
+                </div>
+                <div class="flex-none gap-2">
+                  <div class="form-control">
+                    <input type="text" placeholder="Search" class="input input-bordered" />
+                  </div>
+                  <div class="dropdown dropdown-end">
+                    <label tabindex="0" class="btn btn-ghost btn-circle avatar">
+                      <div class="w-10 rounded-full">
+                        <i class="fa-solid fa-user mx-auto my-auto text-3xl"></i>
+                      </div>
+                    </label>
+                    <ul tabindex="0" class="mt-3 p-2 shadow menu menu-compact dropdown-content bg-base-100 rounded-box w-52">
+                      <li>
+                        <a class="justify-between">
+                          Profile
+                          <span class="badge">New</span>
+                        </a>
+                      </li>
+                      <li><a>Settings</a></li>
+                      <li><a>Logout</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
         </nav>
 
         <!-- banner section -->
@@ -45,15 +78,19 @@
     <!-- footer section -->
     <footer>
         <section class="container mx-auto mt-10">
-            <div class="grid grid-cols-1 md:grid-cols-2">
+            <div class="grid grid-cols-1 md:grid-cols-2 items-center">
                 <!-- Contract Information -->
-                <div>
-                    <h1>Contract Information</h1>
-                    <p>Email: info@example.com</p>
+                <div class="text-2xl text-white flex flex-col items-center">
                     <div>
-                        <a href=""></a>
-                        <a href=""></a>
-                        <a href=""></a>
+                        <h1 class="font-semibold text-3xl">Contract Information</h1>
+                        <p><i class="fa-solid fa-phone"></i> 01500000000</p>
+                        <p><i class="fa-solid fa-envelope"></i> mfarhad.aq@gmail.com</p>
+                    </div>
+                    <div class="flex items-center gap-10 mt-10">
+                        <a href=""><i class="fa-brands fa-github"></i></a>
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                        <a href=""><i class="fa-solid fa-globe"></i></a>
                     </div>
                 </div>
 
