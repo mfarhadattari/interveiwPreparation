@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html data-theme="night" lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap CSS</title>
+  <link rel="shortcut icon" href="./images/icon.png">
+
+ <!-- offline tailwind CSS connection with daisyUI -->
+ <link rel="stylesheet" href="../../daisyUI/daisyUI.css">
+ <script src="../../daisyUI/tailwindCSS.js"></script>
+
+
+  <!-- font awesome -->
+  <script src="https://kit.fontawesome.com/2505059374.js" crossorigin="anonymous"></script>
+
+  <!-- tailwind CSS connection with daisyUI -->
+  <!-- <link href="https://cdn.jsdelivr.net/npm/daisyui@2.51.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script> -->
+</head>
+
+<body class="text-white">
+  <!-- header Section -->
+  <header>
+    <!-- navigation section -->
+    <nav class="container mx-auto">
+      <div class="navbar p-5">
+        <!-- Nav title -->
+        <div id="" class="flex-1">
+          <a class="text-4xl flex gap-5 text-white items-center">
+            <i class="fa-solid fa-laptop-code"></i>
+            <span>M Farhad</span></a>
+        </div>
+
+        <div class="flex-none gap-2">
+          <!-- search btn -->
+          <div class="form-control">
+            <input type="text" placeholder="Search" class="input input-bordered" />
+          </div>
+
+          <!-- avatar  -->
+          <label tabindex="0" class="btn btn-ghost btn-circle avatar">
+            <div class="w-10 rounded-full">
+              <i class="fa-solid fa-user mx-auto my-auto text-3xl"></i>
+            </div>
+          </label>
+        </div>
+      </div>
+    </nav>
+
+    <!-- banner section -->
+      <section class="container mx-auto mt-10">
+      <div class="carousel w-full" style="height: 500px;">
+        <!-- slide 1 -->
+        <div id="slide1"
+          class="carousel-item relative w-full rounded-2xl bg-[url('../../images/banner-1.jpg')] bg-cover bg-no-repeat bg-center">
+
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide3" class="btn btn-circle">❮</a>
+            <a href="#slide2" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+
+        <!-- slide 2 -->
+        <div id="slide2"
+          class="carousel-item relative w-full  rounded-2xl bg-[url('../../images/banner-2.jpg')] bg-cover bg-no-repeat bg-center">
+
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide1" class="btn btn-circle">❮</a>
+            <a href="#slide3" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+
+        <!-- slide 3 -->
+        <div id="slide3"
+          class="carousel-item relative w-full  rounded-2xl bg-[url('../../images/banner-3.jpg')] bg-cover bg-no-repeat bg-center">
+
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide2" class="btn btn-circle">❮</a>
+            <a href="#slide1" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </header>
+
+  
+
+  <!-- footer section -->
+  <footer class="py-5">
+    <section class="container mx-auto mt-10">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-10 mx-auto">
+        <!-- Contract Information -->
+        <div class="text-2xl text-white flex flex-col items-center">
+          <h1 class="font-semibold text-3xl mb-10">Contract Information</h1>
+          <div>
+            <p><i class="fa-solid fa-phone"></i> 01500000000</p>
+            <p><i class="fa-solid fa-envelope"></i> mfarhad.aq@gmail.com</p>
+          </div>
+          <div class="flex items-center gap-10 mt-10">
+            <a href=""><i class="fa-brands fa-github"></i></a>
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+            <a href=""><i class="fa-solid fa-globe"></i></a>
+          </div>
+        </div>
+
+        <!-- Message Section -->
+        <div class="flex flex-col items-center content-center gap-5 justify-center w-3/4">
+          <input type="email" class="w-full p-3 rounded-lg text-white" placeholder="Your Email">
+          <textarea name="" id="" cols="30" rows="5" class="w-full p-3   rounded-lg text-white"
+            placeholder="Write Your Message"></textarea>
+          <button
+            class="bg-sky-600 hover:bg-pink-500 px-5 py-2 text-white rounded-lg font-semibold text-xl text-center">Send
+            Message</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- copyright information -->
+    <section class="container mx-auto border border-base-300 py-5 my-10 shadow-xl ">
+      <p class="text-center font-bold text-white">&copy 2023 All Right Reserved <br> By Mohammad Farhad</p>
+    </section>
+  </footer>
+
+</body>
+
+</html>

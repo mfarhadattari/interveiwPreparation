@@ -6,97 +6,350 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Interview Preparation</title>
-  <link rel="shortcut icon" href="./images/icon.png" type="image/x-icon">
+  <link rel="shortcut icon" href="./images/icon.png">
 
   <!-- offline tailwind CSS connection with daisyUI -->
   <link rel="stylesheet" href="daisyUI/daisyUI.css">
   <script src="./daisyUI/tailwindCSS.js"></script>
-  <script src="./fontAwsome/fontAwesome.js"></script>
 
 
   <!-- font awesome -->
-  <!-- <script src="https://kit.fontawesome.com/2505059374.js" crossorigin="anonymous"></script> -->
+  <script src="https://kit.fontawesome.com/2505059374.js" crossorigin="anonymous"></script>
 
   <!-- tailwind CSS connection with daisyUI -->
   <!-- <link href="https://cdn.jsdelivr.net/npm/daisyui@2.51.1/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script> -->
 </head>
 
-<body>
+<body class="text-white">
   <!-- header Section -->
   <header>
     <!-- navigation section -->
     <nav class="container mx-auto">
       <div class="navbar p-5">
-        <div class="flex-1">
+        <!-- Nav title -->
+        <div id="" class="flex-1">
           <a class="text-4xl flex gap-5 text-white items-center">
             <i class="fa-solid fa-laptop-code"></i>
             <span>M Farhad</span></a>
         </div>
+
         <div class="flex-none gap-2">
+          <!-- search btn -->
           <div class="form-control">
             <input type="text" placeholder="Search" class="input input-bordered" />
           </div>
-          <div class="dropdown dropdown-end">
-            <label tabindex="0" class="btn btn-ghost btn-circle avatar">
-              <div class="w-10 rounded-full">
-                <i class="fa-solid fa-user mx-auto my-auto text-3xl"></i>
-              </div>
-            </label>
-            <ul tabindex="0" class="mt-3 p-2 shadow menu menu-compact dropdown-content bg-base-100 rounded-box w-52">
-              <li>
-                <a class="justify-between">
-                  Profile
-                  <span class="badge">New</span>
-                </a>
-              </li>
-              <li><a>Settings</a></li>
-              <li><a>Logout</a></li>
-            </ul>
-          </div>
+
+          <!-- avatar  -->
+          <label tabindex="0" class="btn btn-ghost btn-circle avatar">
+            <div class="w-10 rounded-full">
+              <i class="fa-solid fa-user mx-auto my-auto text-3xl"></i>
+            </div>
+          </label>
         </div>
       </div>
     </nav>
 
     <!-- banner section -->
-    <section>
+    <section class="container mx-auto mt-10">
+      <div class="carousel w-full" style="height: 500px;">
+        <!-- slide 1 -->
+        <div id="slide1"
+          class="carousel-item relative w-full rounded-2xl bg-[url('./images/banner-1.jpg')] bg-cover bg-no-repeat bg-center">
 
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide3" class="btn btn-circle">❮</a>
+            <a href="#slide2" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+
+        <!-- slide 2 -->
+        <div id="slide2"
+          class="carousel-item relative w-full  rounded-2xl bg-[url('./images/banner-2.jpg')] bg-cover bg-no-repeat bg-center">
+
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide1" class="btn btn-circle">❮</a>
+            <a href="#slide3" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+
+        <!-- slide 3 -->
+        <div id="slide3"
+          class="carousel-item relative w-full  rounded-2xl bg-[url('./images/banner-3.jpg')] bg-cover bg-no-repeat bg-center">
+
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide2" class="btn btn-circle">❮</a>
+            <a href="#slide1" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+      </div>
     </section>
   </header>
 
   <!-- main section -->
-  <main>
-    <section>
+  <main class="mt-10">
+    <section class="container mx-auto grid grid-cols-5 gap-5">
 
+      <!-- Question Section -->
+      <article class="col-span-3">
+
+        <!-- question 1 section -->
+        <div tabindex="0" class="collapse collapse-plus border border-base-300 bg-base-100 rounded-box mt-5">
+          <div class="collapse-title text-xl font-medium">
+            <h1 class="font-bold text-xl">
+              Question
+            </h1>
+          </div>
+          <div class="collapse-content">
+            <p class="text-lg">
+              Answer Here
+            </p>
+          </div>
+        </div>
+
+        <!-- question 2 section -->
+        <div tabindex="0" class="collapse collapse-plus border border-base-300 bg-base-100 rounded-box mt-5">
+          <div class="collapse-title text-xl font-medium">
+            <h1 class="font-bold text-xl">2. How will you select HTML elements using DOM? Name the DOM methods.</h1>
+          </div>
+          <div class="collapse-content text-lg">
+            <p>Ans: We can select html elements in 4 way using DOM.</p>
+            <h1 class="font-bold">They Are: </h1>
+            <ol class="list-decimal px-5">
+              <li> getElementById() method. </li>
+              <li> getElementsByClassName() method. </li>
+              <li> getElementsByTagName() method. </li>
+              <li> querySelector() & querySelectorAll() method. </li>
+            </ol>
+          </div>
+        </div>
+      </article>
+
+      <!-- Topics -->
+      <aside class="col-span-2">
+
+        <!-- topic 1 : html -->
+        <div tabindex="0" class="collapse collapse-plus border border-base-300 bg-base-100 rounded-box mt-5">
+          <div class="collapse-title text-xl font-medium">
+            <h1 class="font-bold text-xl">
+              HTML
+            </h1>
+          </div>
+          <div class="collapse-content pl-10">
+            <ol class="list-decimal">
+              <li>Are the HTML tags and elements the same thing?</li>
+              <li>Difference between inline, block and inline-block element. </li>
+            </ol>
+          </div>
+        </div>
+
+        <!-- topics 2 : css-->
+        <div tabindex="0" class="collapse collapse-plus border border-base-300 bg-base-100 rounded-box mt-5">
+          <div class="collapse-title text-xl font-medium">
+            <h1 class="font-bold text-xl">
+              CSS
+            </h1>
+          </div>
+          <div class="collapse-content text-lg">
+            <ol class="list-decimal">
+              <li> What do you understand by the universal sector? </li>
+              <li>Differentiate between the use of ID selector and class selector.</li>
+              <li>How can you use CSS to control image repetition?</li>
+              <li>Is it possible to change an inline element into a block level element?</li>
+            </ol>
+          </div>
+        </div>
+
+        <!-- topics 3: git and github -->
+        <div tabindex="0" class="collapse collapse-plus border border-base-300 bg-base-100 rounded-box mt-5">
+          <div class="collapse-title text-xl font-medium">
+            <h1 class="font-bold text-xl">
+              Git & Github
+            </h1>
+          </div>
+          <div class="collapse-content text-lg pl-10">
+            <ol class="list-decimal">
+              <li>What is Git? </li>
+              <li>What are the advantages of using Git? </li>
+              <li> What do you understand by the term ‘Version Control System’? </li>
+              <li> What’s the difference between Git and GitHub? </li>
+              <li> Name a few Git commands with their function. </li>
+              <li> Difference between git fetch and git pull. </li>
+            </ol>
+          </div>
+        </div>
+
+        <!-- topics 4 : bootstrap css-->
+        <div tabindex="0" class="collapse collapse-plus border border-base-300 bg-base-100 rounded-box mt-5">
+          <div class="collapse-title text-xl font-medium">
+            <h1 class="font-bold text-xl">
+              Bootstrap CSS
+            </h1>
+          </div>
+          <div class="collapse-content text-lg">
+            Bootstrap CSS
+          </div>
+        </div>
+
+        <!-- topics 5: tailwind css -->
+        <div tabindex="0" class="collapse collapse-plus border border-base-300 bg-base-100 rounded-box mt-5">
+          <div class="collapse-title text-xl font-medium">
+            <h1 class="font-bold text-xl">
+              Tailwind CSS
+            </h1>
+          </div>
+          <div class="collapse-content text-lg">
+            Tailwind CSS
+          </div>
+        </div>
+
+        <!-- topics 6 : javascript-->
+        <div tabindex="0" class="collapse collapse-plus border border-base-300 bg-base-100 rounded-box mt-5">
+          <div class="collapse-title text-xl font-medium">
+            <h1 class="font-bold text-xl">
+              JavaScript
+            </h1>
+          </div>
+          <div class="collapse-content text-lg">
+            JavaScript
+          </div>
+        </div>
+
+        <!-- topics 7 : dom-->
+        <div tabindex="0" class="collapse collapse-plus border border-base-300 bg-base-100 rounded-box mt-5">
+          <div class="collapse-title text-xl font-medium">
+            <h1 class="font-bold text-xl">
+              DOM
+            </h1>
+          </div>
+          <div class="collapse-content text-lg pl-10">
+            <ol class="list-decimal">
+              <li>What is DOM and what is the purpose of DOM?</li>
+              <li>How will you select HTML elements using DOM? Name the DOM methods.</li>
+              <li>What is event bubble?</li>
+              <li>What is a callback function and why will you use it?</li>
+              <li>What’s the difference between an Event Handler and an Event Listener?</li>
+              <li>Can you explain the different types of events available in JavaScript?</li>
+              <li>What’s the difference between event.preventDefault() and event.stopPropagation() ?</li>
+            </ol>
+
+          </div>
+        </div>
+
+        <!-- topics 8: es6 -->
+        <div tabindex="0" class="collapse collapse-plus border border-base-300 bg-base-100 rounded-box mt-5">
+          <div class="collapse-title text-xl font-medium">
+            <h1 class="font-bold text-xl">
+              ES6
+            </h1>
+          </div>
+          <div class="collapse-content text-lg pl-10">
+            <ol class="list-decimal">
+              <li>What is ES6? Have you ever used anything from ES6?</li>
+              <li>Explain the difference between var, let and const.</li>
+              <li>What is the arrow function, and how to create it?</li>
+              <li>Give an example of an Arrow function in ES6? List down its advantages.</li>
+              <li>Discuss spread operator in ES6 with an example.</li>
+              <li>What do you understand about default parameters?</li>
+              <li>What are template literals in ES6?</li>
+              <li>Tell us the difference between arrow and regular function.</li>
+              <li>What’s the difference between map, foreach, filter?</li>
+              <li>What’s the difference between filter and find?</li>
+              <li>What is the difference between for..of and for..in?</li>
+              <li>How do you empty an array?</li>
+              <li>Difference between class and object.</li>
+              <li>What is a Prototype chain? Or how does inheritance work in JavaScript?</li>
+              <li>What does destructing do in es6?</li>
+              <li>Is optional chaining is same as ternary operator?</li>
+              <li>What do you mean by dot notation and bracket notation? When should you use dot notation or bracket notation?</li>
+              <li>Deference between bind, call and apply?</li>
+              <li>Work of 'this' keyword?</li>
+              <li>How to Compare two object in JavaScript?</li>
+            </ol>
+          </div>
+        </div>
+
+        <!-- topics 9: api -->
+        <div tabindex="0" class="collapse collapse-plus border border-base-300 bg-base-100 rounded-box mt-5">
+          <div class="collapse-title text-xl font-medium">
+            <h1 class="font-bold text-xl">
+              API
+            </h1>
+          </div>
+          <div class="collapse-content text-lg pl-10">
+            <ol class="list-decimal">
+              <li>What is API?</li>
+              <li>Work of API?</li>
+              <li>How to get data from backend by api?</li>
+            </ol>
+          </div>
+        </div>
+
+
+      </aside>
     </section>
 
-    <!-- Topics -->
-    <aside>
 
-    </aside>
+    <!-- notes section -->
+    <section class="mt-10 container mx-auto">
+      <div class="border border-base-300 p-5 rounded-lg">
+        <div class="border-b border-base-300 pb-5">
+          <h1 class="font-semibold text-5xl text-center">Notes</h1>
+        </div>
+      
+      <div class="grid grid-cols-4 gap-5  p-5">
+        <button class="bg-cyan-800 hover:bg-pink-500 rounded-lg p-5">
+          <h1 class="text-center font-bold text-3xl"><a href="./other-page/html/html-page.html">HTML</a></h1>
+        </button>
+        <button class="bg-cyan-800 hover:bg-pink-500 rounded-lg p-5">
+          <h1 class="text-center font-bold text-3xl"><a href="./other-page/CSS/css-page.html">CSS</a></h1>
+        </button>
+        <button class="bg-cyan-800 hover:bg-pink-500 rounded-lg p-5">
+          <h1 class="text-center font-bold text-3xl"><a href="./other-page/github/github-page.html">GitHub</a></h1>
+        </button>
+        <button class="bg-cyan-800 hover:bg-pink-500 rounded-lg p-5">
+          <h1 class="text-center font-bold text-3xl"><a href="./other-page/bootstrap/bootstrap-page.html">Bootstrap</a></h1>
+        </button>
+        <button class="bg-cyan-800 hover:bg-pink-500 rounded-lg p-5">
+          <h1 class="text-center font-bold text-3xl"><a href="./other-page/tailwind/tailwind-page.html">Tailwind CSS</a></h1>
+        </button>
+        <button class="bg-cyan-800 hover:bg-pink-500 rounded-lg p-5">
+          <h1 class="text-center font-bold text-3xl"><a href="./other-page/JS/javascript-page.html">JavaScript</a></h1>
+        </button>
+        <button class="bg-cyan-800 hover:bg-pink-500 rounded-lg p-5">
+          <h1 class="text-center font-bold text-3xl"><a href="./other-page/DOM/dom-page.html">DOM</a></h1>
+        </button>
+        <button class="bg-cyan-800 hover:bg-pink-500 rounded-lg p-5">
+          <h1 class="text-center font-bold text-3xl"><a href="./other-page/API/api-page.html">API</a></h1>
+        </button>
+        
+      </div>  
+      </div>
+    </section>
+
   </main>
 
   <!-- footer section -->
-  <footer>
+  <footer class="py-5">
     <section class="container mx-auto mt-10">
-      <div class="grid grid-cols-1 md:grid-cols-2 items-center">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-10 mx-auto">
         <!-- Contract Information -->
-          <div class="text-2xl text-white flex flex-col items-center">
-            <h1 class="font-semibold text-3xl mb-10">Contract Information</h1>
-            <div>
-              <p><i class="fa-solid fa-phone"></i> 01500000000</p>
-              <p><i class="fa-solid fa-envelope"></i> mfarhad.aq@gmail.com</p>
-            </div>
-            <div class="flex items-center gap-10 mt-10">
-              <a href=""><i class="fa-brands fa-github"></i></a>
-              <a href=""><i class="fa-brands fa-facebook"></i></a>
-              <a href=""><i class="fa-brands fa-linkedin"></i></a>
-              <a href=""><i class="fa-solid fa-globe"></i></a>
-            </div>
+        <div class="text-2xl text-white flex flex-col items-center">
+          <h1 class="font-semibold text-3xl mb-10">Contract Information</h1>
+          <div>
+            <p><i class="fa-solid fa-phone"></i> 01500000000</p>
+            <p><i class="fa-solid fa-envelope"></i> mfarhad.aq@gmail.com</p>
           </div>
+          <div class="flex items-center gap-10 mt-10">
+            <a href=""><i class="fa-brands fa-github"></i></a>
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+            <a href=""><i class="fa-solid fa-globe"></i></a>
+          </div>
+        </div>
 
         <!-- Message Section -->
-        <div class="flex flex-col items-center content-center gap-5 w-3/4 mx-auto">
+        <div class="flex flex-col items-center content-center gap-5 justify-center w-3/4">
           <input type="email" class="w-full p-3 rounded-lg text-white" placeholder="Your Email">
           <textarea name="" id="" cols="30" rows="5" class="w-full p-3   rounded-lg text-white"
             placeholder="Write Your Message"></textarea>
@@ -108,8 +361,8 @@
     </section>
 
     <!-- copyright information -->
-    <section class="container mx-auto">
-      <p class="text-center mt-10 font-bold text-white">&copy 2023 All Right Reserved <br> By Mohammad Farhad</p>
+    <section class="container mx-auto border border-base-300 py-5 my-10 shadow-xl ">
+      <p class="text-center font-bold text-white">&copy 2023 All Right Reserved <br> By Mohammad Farhad</p>
     </section>
   </footer>
 
